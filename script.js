@@ -50,7 +50,7 @@ const calcTempAmplitudeNew = function (t1, t2) {
 const amplitudeNew = calcTempAmplitudeNew([3, 5, 1], [9, 0, 5]);
 console.log(amplitudeNew);
 */
-
+/*
 const measureKelvin = function() {
     const measurement = {
         type: 'temp',
@@ -89,3 +89,24 @@ const calcTempAmplitudeBug = function (t1, t2) {
 
 const amplitudeBug = calcTempAmplitudeBug([3, 5, 1], [9, 4, 5]);
 console.log(amplitudeBug);
+*/
+
+//CODING CHALLENGE 1
+
+const maxTemp1 = [17, 21, 23];
+const maxTemp2 = [12, 5, -5, 0, 4];
+
+const tempResult = function(temp) {
+    let str = '';
+    for(let i = 0; i < temp.length; i++) {
+        str = str + ` ${temp[i]}C in ${i + 1} days ...`;
+    }
+    console.log('...' + str);
+}
+
+tempResult(maxTemp1);
+tempResult(maxTemp2);
+
+
+
+
